@@ -1,0 +1,150 @@
+body {
+    margin: 0px !important;
+    padding: 0px !important;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    background-color: #0E1821;
+}
+
+.topsection{
+    min-height: 100vh;
+    height: max-content;
+    width: 100%;
+    background-color: #0E1821;
+    margin-top: 0px;
+}
+
+.aboutmeinner {
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+.toplogo {
+    width: 400px;
+    border-radius: 50%;
+    margin-top: 00px;
+}
+
+.nameheader {
+    color: #C5D0D9;
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+    
+}
+
+.subline1 {
+    color: #C5D0D9;
+    font-size: 20px;
+    font-weight: 100;
+    text-align: center;
+    
+}
+
+.subline2 {
+    color: #C5D0D9;
+    font-size: 15px;
+    font-weight: 100;
+    text-align: center;
+    
+}
+
+.infosection {
+    height: 800px;
+    width: 100%;
+    background: url("bg.png") no-repeat 
+    top center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-top: 40px;
+}
+
+.info-sec1 {
+    width: 940px;
+    transform: translateX(-50%);
+    height: 260px;
+    background-color: #0E1821;
+    margin-left: 50%;
+}
+
+.info-sec2 {
+    width: 940px;
+    margin-top: 60px;
+    transform: translateX(-50%);
+    height: 390px;
+    background-color: #0E1821;
+    margin-left: 50%;
+}
+
+.nameheader-sec1 {
+    color: #C5D0D9;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.list-sect1 {
+    margin-left: 50px;
+    margin-top: 35px;
+}
+
+.list-sect1 li {
+    margin-top: 25px;
+    color: #C5D0D9;
+    font-size: 15px;
+}
+
+.portfolio {
+    height: max-content;
+    width: 100%;
+    background-color: #0E1821;
+    padding-top: 10px;
+}
+
+.pf-left {
+    float: left;
+    margin-right: 10px;
+    width: calc(33.33% - 6.66px);
+    height: fit-content;
+}
+
+.pf-middle {
+    float: left;
+    width: calc(33.33% - 6.66px);
+    height: fit-content;
+}
+
+.pf-right {
+    float: left;
+    margin-left: 10px;
+    width: calc(33.33% - 6.66px);
+    height: fit-content;
+}
+
+.pf-img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 1000px) {
+    .info-sec1 {
+        width: 650px;
+    }
+
+    .info-sec2 {
+        width: 650px;
+    }
+
+    .list-sect1 {
+        margin-left: 10px;
+        margin-top: 35px;
+    }
+}

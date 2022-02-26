@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, min-width=700" />
+        <title>Test site</title>
+        <link rel="icon" type="image/x-icon" href="/logo.jpg">
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <section class="topsection">
+            <div class="aboutmeinner">
+                <img class="toplogo" src="logo.jpg">
+                <h1 class="nameheader">Mikkel Frisvold</h1>
+                <h1 class="subline1">3D concept and environment artist</h1>
+                <h1 class="subline2">Contact me via <a style="color: lightblue; text-decoration: none;" href="mailto:mikkel.frisvold@icloud.com">email</a> for business inquiries!</h1>
+            </div>
+        </section>
+        <section class="infosection">
+            <div class="info-sec1">
+                <h1 class="nameheader-sec1">SOME OF MY PROJECTS</h1>
+                <ul class="list-sect1">
+                    <li>Founder & CEO of MetaLads.</li>
+                    <li>900,000&lt sales in the Roblox catalog.</li>
+                    <li>Contributed to 800,000 Play sessions accross multiple game titles.</li>
+                </ul>
+            </div>
+            <div class="info-sec2">
+                <h1 class="nameheader-sec1">SOME OF MY AFFILIATES</h1>
+                <ul class="list-sect1">
+                    <li>UGC partner with influencer Oofy (1,260,000&lt subscribers).</li>
+                    <li>UGC partner with influencer Bighead. (340,000&lt subscribers).</li>
+                    <li>UGC partner with influencer Coolpanda (125,000&lt subscribers).</li>
+                    <li>UGC partner with influencer Rainster (176,000&lt subscribers).</li>
+                    <li>UGC partner & previous community manager for influencer Bigdadt (280,000&lt subscribers).</li>
+                    <li>UGC partner & previous manager for influencer PandazPlay (538,000&lt subscribers).</li>
+                </ul>
+            </div>
+        </section>
+        <section class="portfolio">
+            <div class="pf-left">
+                <img class="pf-img" src="pf1.png" style="margin-bottom: 7.5px;">
+                <img class="pf-img" src="pf2.png">
+            </div>
+            <div class="pf-middle">
+                <div class="pf-img">
+                    <video src="pf3.mp4" style="width: 100%; margin-bottom: -5px;" type="video/mp4" onclick="if (vidpaused == false){this.pause(); vidpaused = true} else{this.play(); vidpaused = false};" muted autoplay>
+                </div>
+                <div class="pf-img">
+                    <video src="pf4.mp4" style="width: 100%; margin-bottom: -5px;" type="video/mp4" onclick="if (vidpaused == false){this.pause(); vidpaused = true} else{this.play(); vidpaused = false};" muted autoplay loop>
+                </div>
+                <img class="pf-img" src="pf5.png">
+
+                <p style="color: #C5D0D9; margin-left: -100%;">&copy MetaLads 2022</p>
+            </div>
+            <div class="pf-right">
+                <img class="pf-img" src="pf6.png" style="margin-bottom: 7.5px;">
+                <div class="pf-img">
+                    <video src="pf7.mp4" style="width: 100%; margin-bottom: -5px;" type="video/mp4" onclick="if (vidpaused == false){this.pause(); vidpaused = true} else{this.play(); vidpaused = false};" muted autoplay loop>
+                </div>
+            </div>
+        </section>
+        <script>
+            var vidpaused = false
+
+            (function() {
+                var viewport = document.querySelector("meta[name=viewport]");
+                if (viewport) {
+                var content = viewport.getAttribute("content");
+                var parts = content.split(",");
+                for (var i = 0; i < parts.length; ++i) {
+                    var part = parts[i].trim();
+                    var pair = part.split("=");
+                    if (pair[0] === "min-width") {
+                    var minWidth = parseInt(pair[1]);
+                    if (screen.width < minWidth) {
+                        document.head.removeChild(viewport);
+            
+                        var newViewport = document.createElement("meta");
+                        newViewport.setAttribute("name", "viewport");
+                        newViewport.setAttribute("content", "width=" + minWidth);
+                        document.head.appendChild(newViewport);
+                        document.body.style.zoom=1.0;this.blur();
+                        break;
+                    }
+                    }
+                }
+                }
+            })();
+        </script>
+    </body>
+</html>
