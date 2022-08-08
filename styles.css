@@ -152,4 +152,15 @@ body {
     .info-sec2 {
         width: 100%;
     }
+
+@media (max-width: 650px) {
+    .info-sec1 {
+        width: 100%;
+    }
+
+    .info-sec2 {
+        width: 100%;
+    }
+}
+
 }
