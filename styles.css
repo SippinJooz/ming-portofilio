@@ -110,7 +110,7 @@ body {
     padding-top: 10px;
 }
 
-.portfolio:nth-child(3){
+.portfolio :nth-child(3){
     margin-right: 0px !important;
 }
 
