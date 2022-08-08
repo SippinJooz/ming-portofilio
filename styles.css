@@ -109,6 +109,11 @@ body {
     background-color: #0E1821;
     padding-top: 10px;
 }
+
+.portfolio:nth-child(3){
+    margin-right: 0px !important;
+}
+
 @media (max-width: 600px) {
     .pf-column {
         margin-right: 10px;
