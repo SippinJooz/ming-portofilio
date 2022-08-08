@@ -108,25 +108,20 @@ body {
     background-color: #0E1821;
     padding-top: 10px;
 }
-
-.pf-left {
-    float: left;
-    margin-right: 10px;
-    width: calc(33.33% - 6.66px);
-    height: fit-content;
+@media (max-width: 600px) {
+    .pf-column {
+        margin-right: 10px;
+        width: 100%;
+        height: fit-content;
+    }
 }
-
-.pf-middle {
-    float: left;
-    width: calc(33.33% - 6.66px);
-    height: fit-content;
-}
-
-.pf-right {
-    float: left;
-    margin-left: 10px;
-    width: calc(33.33% - 6.66px);
-    height: fit-content;
+@media (min-width: 600px) {
+    .pf-column {
+        float: left;
+        margin-right: 10px;
+        width: calc(33% - 6.66px);
+        height: fit-content;
+    }
 }
 
 .pf-img {
