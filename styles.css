@@ -116,12 +116,17 @@ body {
         width: 100%;
         height: fit-content;
     }
+
+    .copyright-notice {
+        display: none;
+    }
 }
 @media (min-width: 600px) {
     .pf-column {
         float: left;
         width: calc(33.33% - 6.66px);
         height: fit-content;
+        background: red;
     }
     .pf-column-middle {
         margin-left: 10px;
@@ -157,5 +162,4 @@ body {
     .info-sec2 {
         width: 100%;
     }
-
 }
