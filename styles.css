@@ -126,7 +126,6 @@ body {
         float: left;
         width: calc(33.33% - 6.66px);
         height: fit-content;
-        background: red;
     }
     .pf-column-middle {
         margin-left: 10px;
