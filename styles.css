@@ -110,10 +110,6 @@ body {
     padding-top: 10px;
 }
 
-.portfolio :nth-child(3){
-    margin-right: 0px !important;
-}
-
 @media (max-width: 600px) {
     .pf-column {
         margin-right: 10px;
@@ -124,12 +120,12 @@ body {
 @media (min-width: 600px) {
     .pf-column {
         float: left;
-        margin-right: 10px;
-        width: calc(33% - 6.66px);
+        width: calc(33.33% - 6.66px);
         height: fit-content;
     }
-    .pf-column-right {
-        margin-right: 0px;
+    .pf-column-middle {
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }
 
